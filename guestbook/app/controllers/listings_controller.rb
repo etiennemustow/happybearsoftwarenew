@@ -1,18 +1,23 @@
 class ListingsController < ApplicationController
     def new
+        @listing = Listing.new
     end
     
     def index
+        @listing = Listing.new
         @listings = Listing.all
     end
     
     def create
-         
-    @listing = Listing.new(listing_params)
-
- 
-    @listing.save
-    redirect_to :action => 'index'
+      @listings = Listing.all
+      @listing = Listing.new(listing_params)
+  
+      if @listing.save
+          flash[:success] = "Your entry has been posted!"
+        redirect_to :action => 'index'
+      else 
+          render 'index'
+      end
     end
     
     def show
