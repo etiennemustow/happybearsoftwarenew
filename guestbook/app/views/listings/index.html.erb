@@ -52,6 +52,9 @@
       <td><%= listing.name %></td>
       <td><%= listing.message %></td>
       <td><%= time_ago_in_words(listing.created_at) %></td>
+      <td><%= link_to 'Delete', listing_path(listing),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
     </tr>
   <% end %>
 </table>
