@@ -1,7 +1,7 @@
 <h1>New Listing</h1>
 
 
-<%= form_for :listing, url: listings_path do |f| %>
+<%= form_for :listing, url: {controller: "listings", action: "create"} do |f| %>
   <p>
     <%= f.label :name %><br>
     <%= f.text_field :name %>

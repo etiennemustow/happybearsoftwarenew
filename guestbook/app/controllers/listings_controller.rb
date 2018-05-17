@@ -12,7 +12,7 @@ class ListingsController < ApplicationController
 
  
     @listing.save
-    redirect_to @listing
+    redirect_to :action => 'index'
     end
     
     def show

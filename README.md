@@ -5,7 +5,7 @@
 * Git clone this repo
 * Change into the 'guestbook' directory
 ```
-cd hbs
+cd guestbook
 ```
 * Start up the server
 ```
