@@ -17,5 +17,8 @@ rails s -p $PORT -b $IP
 
 * Enter the following to run spec tests
 ```
-bundle exec rspec
+ rspec
+```
+```
+ rubocop
 ```
