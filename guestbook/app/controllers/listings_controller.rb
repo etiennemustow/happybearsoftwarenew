@@ -27,7 +27,7 @@ class ListingsController < ApplicationController
     def destroy
       @listing = Listing.find(params[:id])
       @listing.destroy
- 
+      flash[:success] = "Your entry has been deleted!"
       redirect_to listings_path
     end
     
