@@ -1,0 +1,15 @@
+AllCops:
+  Exclude:
+    - 'app/helpers/application_helper.rb'
+    - 'app/helpers/welcome_helper.rb'
+    - 'test/test_helper.rb'
+    - 'test/controllers/welcome_controller_test.rb'
+    - 'app/controllers/welcome_controller.rb'
+    - 'app/**/*'
+    - 'bin/**/*'
+    - 'test/**/*'
+    - 'db/**/*'
+    - 'spec/**/*'
+    - 'Gemfile'
+    - 'Rakefile'
+    - 'config/**/*'
